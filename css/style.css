@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --White-color: hsl(0, 0%, 100%);
+  --Black-color: hsl(0, 0%, 0%);
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+  --Atlanta-font: 'Alata', sans-serif;
+  --Josefin-font:'Josefin Sans', sans-serif;
+}
+
+body, html {
+  font-size: 62.5%;
+}
+
+.header {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: var(--Josefin-font);
+  position: relative;
+}
+
+.header__logo {
+  position: absolute;
+  z-index: 99;
+  margin: 7.5rem 0 0 2.5rem;
+}
+
+@media only screen and (min-width: 37.5rem) {
+  .header__logo {
+    margin-left: 8rem;
+    margin-top: 7.5rem;
+  }
+}
+
+.header__nav-mobile-open {
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  margin: 3rem 2.5rem 0 0;
+  cursor: pointer;
+}
+
+.header__nav-mobile-close {
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  margin: 3rem 2.5rem 0 0;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 37.5rem) {
+  .header__nav-mobile {
+    display: none;
+  }
+}
+
+.header__nav-mobile-items {
+  z-index: 97;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 2rem;
+  height: auto;
+  overflow: initial;
+  background: var(--Black-color);
+  padding: 20rem 0;
+}
+
+.header__nav-mobile-items .li-mob {
+  list-style: none;
+  margin-bottom: 2.5rem;
+  margin-left: 2.5rem;
+}
+
+.header__nav-mobile-items a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.2rem;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .header__nav-desktop {
+    display: none;
+  }
+}
+
+.header__nav-desktop-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  margin: 3rem 8rem 0 0;
+}
+
+.header__nav-desktop-items .li-desk {
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.header__nav-desktop-items a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: var(--White-color);
+}
+
+.main {
+  width: auto;
+  max-width: 100%;
+}
+
+.main__banner {
+  max-width: 100%;
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media only screen and (min-width: 37.5rem) {
+  .main__banner {
+    background: url("../images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+.main__banner-title {
+  color: var(--White-color);
+  font-size: 3rem;
+  font-family: var(--Josefin-font);
+  text-transform: uppercase;
+  margin: 0 auto;
+  width: 25rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 0.2rem solid var(--White-color);
+  padding: 2rem;
+}
+
+@media only screen and (min-width: 37.5rem) {
+  .main__banner-title {
+    width: 40rem;
+    height: 15rem;
+    padding: 3rem;
+    margin-left: 8rem;
+  }
+}
+
+.hide-elem {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */
