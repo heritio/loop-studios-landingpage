@@ -27,22 +27,337 @@
     }
     &__banner-title{
         color: var(--White-color);
-        font-size: 3rem;
+       
         font-family: var(--Josefin-font);
         text-transform: uppercase;
         margin: 0 auto;
-        width: 25rem;
+        width: 80%;
         height: fit-content;
         border: .2rem solid var(--White-color);
         
-        padding: 2rem;
+        
+       
 
         @media only screen and (min-width: 37.5rem){
            width: 40rem;
-           height: 15rem;
-           padding: 3rem;
            margin-left: 8rem;
         }
     } 
-   
+    &__banner-title-text{
+        max-width: 50%;
+        font-size: 3rem;
+        margin: 3rem 2rem;
+        font-weight: 300;
+        @media only screen and (min-width: 37.5rem){
+            font-size: 3rem;
+         }
+    }
+
+    &__section-1{
+        margin: 7rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+       font-family: var(--Josefin-font);
+
+       @media only screen and (min-width: 37.5rem){
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: center;
+       }
+    }
+    &__section-1-img{
+       max-width: 85%;
+       margin: 0 auto;
+       flex-basis: 1;
+       @media only screen and (min-width: 37.5rem){
+        flex-basis: 1;
+        max-width: 100%;
+        margin-left: 2rem;
+       }
+       
+    }
+    &__section-1-img-mob{
+        max-width: 100%;
+        height: auto;
+        
+        @media only screen and (min-width: 37.5rem){
+            display: none;
+        }
+    }
+    &__section-1-img-desktop{
+        max-width: 80%;
+        height: auto;
+        margin-left: 10rem;
+        @media only screen and (max-width: 37.5rem){
+            display: none;
+         }
+    }
+    &__section-1-typo{
+       width: 85%;
+       margin: 2rem auto 0 auto;
+       flex-basis: 1;
+       @media only screen and (min-width: 37.5rem){
+        flex-basis: 1;
+        max-width: 40%;
+        background-color: var(--White-color);
+        padding: 5rem 0 0 5rem;
+        margin-right: 5rem;
+        transform: translateX(-7rem);
+       }
+    }
+    &__section-1-title{
+       text-align: center;
+       width: 85%;
+       font-size: 3rem;
+       margin: 0 auto 1rem auto;
+       text-transform: uppercase;
+       font-weight: 300;
+       @media only screen and (min-width: 37.5rem){
+        text-align: start;
+        font-size: 2.5rem;
+        width: 100%;
+       
+       }
+    }
+    &__section-1-info{
+      font-size: 1.5rem;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      @media only screen and (min-width: 37.5rem){
+        width: 100%;
+        text-align: start;
+       }
+    }
+
+    &__section-2{
+      max-width: 100%;
+      font-size: 1.5rem;
+      font-family: var(--Josefin-font);
+      font-weight: 300;
+    }
+    &__section-2-header{
+        font-size: 2.5rem;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        @media only screen and (min-width: 37.5rem){
+            text-align: start;
+            width: 76%;
+            justify-content: space-between;
+        }
+    }
+    &__section-2-title{
+       text-align: center;
+       font-size: 4.3rem;
+       font-weight: 300;
+       @media only screen and (min-width: 37.5rem){
+        font-size: 3rem;
+    }
+    }
+    &__section-2-desktop-btn{
+        padding: .8rem 2rem;
+        color: white;
+        background-color: black;
+        border: none;
+        text-transform: uppercase;
+        font-size: .9rem;
+        cursor: pointer;
+        @media only screen and (max-width: 37.5rem){
+            display: none;
+        }
+    }    
+    &__section-2-top{
+      width: 100%;
+      color: var(--White-color);
+      font-size: 2.5rem;
+      margin: 3rem auto 0 auto;
+      text-transform: uppercase;
+
+      @media only screen and (min-width: 37.5rem){
+        display: flex;
+        flex-direction: row;
+        width: 76%;
+        
+     }
+    }
+    &__section-2-top-creation{
+        width: 80%;
+        height: 10rem;
+        margin: 0 auto 1.5rem auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 2.5rem;
+        p{
+            width: 10%;
+        }
+        @media only screen and (min-width: 37.5rem){
+            height: 30rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+            
+        }
+        &-deep-earth{
+            background: url("../images/mobile/image-deep-earth.jpg");
+            background-size: cover;
+            @media only screen and (min-width: 37.5rem){
+                background: url("../images/desktop/image-deep-earth.jpg");
+                background-size: cover;
+                margin: 0 1.3rem 0 0;
+            }
+        } 
+        &-night-arcade{
+            background: url("../images/mobile/image-night-arcade.jpg");
+            background-size: cover;
+            @media only screen and (min-width: 37.5rem){
+                background: url("../images/desktop/image-night-arcade.jpg");
+                background-size: cover;
+                margin: 0 1.3rem 0 0;
+            }
+        }
+        &-soccer-team{
+            background: url("../images/mobile/image-soccer-team.jpg");
+            background-size: cover;
+            p{
+                width: 40%;
+                @media only screen and (min-width: 37.5rem){
+                        width: 90%;
+                }
+            }
+            @media only screen and (min-width: 37.5rem){
+                background: url("../images/desktop/image-soccer-team.jpg");
+                background-size: cover;
+                margin: 0 1.3rem 0 0;
+            }
+        }
+        &-the-grid{
+            background: url("../images/mobile/image-grid.jpg");
+            background-size: cover;
+            @media only screen and (min-width: 37.5rem){
+                background: url("../images/desktop/image-grid.jpg");
+                background-size: cover;
+                margin: 0 0 0 0 ;
+            }
+        }
+
+    }
+    &__section-2-bottom{
+        width: 100%;
+        color: var(--White-color);
+        font-size: 2.5rem;
+        margin: 3rem auto 0 auto;
+        text-transform: uppercase;
+        @media only screen and (min-width: 37.5rem){
+            display: flex;
+            flex-direction: row;
+            width: 76%;
+            
+         }
+    }
+    &__section-2-bottom-creation{
+        width: 80%;
+        height: 10rem;
+        margin: 0 auto 1.5rem auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 2.5rem;
+        p{
+            width: 20%;
+        }
+        @media only screen and (min-width: 37.5rem){
+            height: 30rem;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding-left: 1rem;
+            padding-bottom: 2rem;
+           
+        }
+        
+        &-above-vr{
+            background: url("../images/mobile/image-from-above.jpg");
+            background-size: cover;
+            p{
+                width: 50%;
+                @media only screen and (min-width: 37.5rem){
+                    width: 100%;
+            }
+            }
+            @media only screen and (min-width: 37.5rem){
+                background: url("../images/desktop/image-from-above.jpg");
+                background-size: cover;
+                margin: 0 1.3rem 0 0;
+            }
+        } 
+        &-pocket-borealis{
+            background: url("../images/mobile/image-pocket-borealis.jpg");
+            background-size: cover;
+            @media only screen and (min-width: 37.5rem){
+                background: url("../images/desktop/image-pocket-borealis.jpg");
+                background-size: cover;
+                margin: 0 1.3rem 0 0;
+            }
+        }
+        &-the-curiosity{
+            background: url("../images/mobile/image-curiosity.jpg");
+            background-size: cover;
+            @media only screen and (min-width: 37.5rem){
+                background: url("../images/desktop/image-curiosity.jpg");
+                background-size: cover;
+                margin: 0 1.3rem 0 0;
+            }
+        }
+        &-make-fisheye{
+            background: url("../images/mobile/image-fisheye.jpg");
+            background-size: cover;
+            p{
+                width: 40%;
+                @media only screen and (min-width: 37.5rem){
+                    width: 90%;
+            }
+            }
+            @media only screen and (min-width: 37.5rem){
+                background: url("../images/desktop/image-fisheye.jpg");
+                background-size: cover;
+                margin: 0 0 0 0 ;
+            }
+        }
+
+    }
+    &__section-2-mob-btn{
+        text-align: center;
+        
+        button{
+           border: .2rem solid black;
+           padding: 1rem 2rem;
+           text-transform: uppercase;
+           font-size: 1.4rem;
+           font-family: var(--Josefin-font);
+           font-weight: bold;
+           cursor: pointer;
+        }
+    }
+
+    &__section-2-mob-btn{
+         
+        @media only screen and (min-width: 37.5rem){
+            display: none;
+        }
+    }
 }
